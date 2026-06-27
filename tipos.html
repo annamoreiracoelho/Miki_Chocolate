@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>História do Chocolate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="historia.html">História</a>
+        <a href="tipos.html">Tipos de Chocolates</a>
+        <a href="producao.html">Produção</a>
+        <a href="curiosidades.html">Curiosidades</a>
+        <a href="galeria.html">Galeria</a>
+    </nav>
+</header>
+
+<main class="conteudo">
+    <section class="secao">
+        <h2>Tipos de Chocolates</h2>
+            <article>
+        <table>
+            <tr>
+                <th>Tipo</th>
+                <th>Características</th>
+                <th>Descrição</th>
+            </tr>
+
+            <tr>
+                <td>Chocolate ao Leite</td>
+                <td>Cremoso e doce, feito com cacau, leite e açúcar.</td>
+                <td>E o tipo mais popular e apreciado por topos as idades.</td>
+            </tr>
+
+            <tr>
+                <td>Chocolate Amargo</td>
+                <td>Rico em cacau e com menos açúcar.</td>
+                <td>Possui sabor intenso e marcante, ideal para quem prefere um chocolate mais puro.</td>
+            </tr>
+
+            <tr>
+                <td>Chocolate Branco</td>
+                <td>Feito com manteiga de cacau, leite e açúcar.</td>
+                <td>Possui sabor doce e textura suave e aveludada.</td>
+            </tr>
+
+            <tr>
+                <td>Chocolate Ruby</td>
+                <td>Feito a partir do cacau ruby, que naturalmente possui uma cor rosada e sabor frutado.</td>
+                <td>Levemente ácido, com notas de frutas varmelhas.</td>
+            </tr>
+        </table>
+            </article>
+    </section>
+    <div class="imagem">
+    <img src="ao_leite.png" alt="Chocolate ao Leite">
+    <img src="cacau_bom.png" alt="Chocolate Amargo">
+    </div>
+    <div class="imagem">
+    <img src="branco_meio.png" alt="Chocolate Branco">
+    <img src="ruby.png" alt="Chocolate Cacau Ruby">
+    </div>
+</main>
+</body>
+<script>
+function trocarTema() {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("tema", "escuro");
+    } else {
+        localStorage.setItem("tema", "claro");
+    }
+}
+
+window.onload = function () {
+    if (localStorage.getItem("tema") === "escuro") {
+        document.body.classList.add("dark-mode");
+    }
+}
+</script>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiki do Chocolate.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="topo">
+    <header>
+        <div class="logo">
+            Chocolate.
+        </div>
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="historia.html">História</a>
+            <a href="tipos.html">Tipos de Chocolates</a>
+            <a href="producao.html">Produção do Cacau</a>
+            <a href="curiosidades.html">Curiosidades</a>
+            <a href="galeria.html">Galeria</a>
+        </nav>
+        <button onclick="trocarTema()">Tema escuro</button>
+    </header>
+    <main class="conteudo">
+        <section class="banner">
+
+    <div class="banner-texto">
+        <h1>Wiki do Chocolate</h1>
+
+        <p>
+            Descubra a história, os tipos, a produção e as curiosidades sobre um dos alimentos mais apreciados do mundo.
+        </p>
+
+        <button>Conheça mais</button>
+
+    </div>
+
+</section>
+</body>
+<script>
+function trocarTema() {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("tema", "escuro");
+    } else {
+        localStorage.setItem("tema", "claro");
+    }
+}
+
+window.onload = function () {
+    if (localStorage.getItem("tema") === "escuro") {
+        document.body.classList.add("dark-mode");
+    }
+}
+</script>
+</html>
+

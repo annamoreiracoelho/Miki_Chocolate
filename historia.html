@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>História do Chocolate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="historia.html">História</a>
+        <a href="tipos.html">Tipos de Chocolates</a>
+        <a href="producao.html">Produção</a>
+        <a href="curiosidades.html">Curiosidades</a>
+        <a href="galeria.html">Galeria</a>
+    </nav>
+</header>
+
+<main class="conteudo">
+    <section class="secao">
+    <h1>História do Chocolate</h1>
+    <p>O chocolate é um dos alimentos mais apreciados do mundo, mas sua história começou há milhares de anos na América Central.
+    Sua origem está ligada ao cacau, fruto da árvore do cacaueiro, cujo nome científico é Theobroma cacao, que significa "alimento dos deuses".</p>
+    <h2>A Descoberta do Cacau</h2>
+    <p>Os primeiros povos a utilizarem o cacau foram os olmecas, por volta de 1500 a.C., na região onde hoje fica o México.
+     Eles descobriram que as sementes do fruto podiam ser fermentadas, secas e transformadas em uma bebida.
+    Mais tarde, os maias aperfeiçoaram o uso do cacau. Para eles, o cacau era considerado um presente dos deuses. Os maias preparavam uma bebida amarga chamada xocolatl, 
+    feita com sementes de cacau moídas, água e especiarias. Essa bebida era consumida em cerimônias religiosas, festas e eventos importantes.</p>
+    <h2>O Chocolate Entre os Astecas</h2>
+    <p>Os astecas também valorizavam muito o cacau. Além de utilizarem a bebida de chocolate em rituais e celebrações, eles usavam as sementes como moeda.
+    Com algumas sementes de cacau era possível comprar alimentos, roupas e outros produtos.
+    Segundo a tradição asteca, o deus Quetzalcóatl teria dado o cacau aos seres humanos.
+    Por isso, o fruto era considerado sagrado e reservado principalmente para nobres, guerreiros e sacerdotes.</p>
+    <h2>A Chegada do Chocolate à Europa</h2>
+    <p>Em 1519, o explorador espanhol Hernán Cortés chegou ao território asteca e conheceu a bebida de cacau. 
+    Os espanhóis levaram as sementes para a Europa, onde a receita foi modificada com a adição de açúcar, canela e leite, 
+    tornando-se mais agradável ao paladar europeu.
+    Com o tempo, o chocolate tornou-se um produto muito valorizado entre a nobreza europeia e se espalhou por diversos países.</p>
+    <h2>O Surgimento do Chocolate Moderno</h2>
+    <p>Durante o século XIX, novas máquinas permitiram a produção de chocolate em larga escala. 
+    Em 1828, o holandês Coenraad Johannes van Houten desenvolveu um método para separar a manteiga de cacau da massa de cacau, facilitando a fabricação do chocolate em pó.
+    Em 1875, o suíço Daniel Peter criou o chocolate ao leite, 
+    utilizando leite condensado produzido por Henri Nestlé. A invenção fez grande sucesso e ajudou a popularizar o chocolate em todo o mundo.</p>
+    <h2>Importância do Chocolate Atualmente</h2>
+    <p>Hoje, o chocolate é produzido em diversos países e movimenta bilhões de dólares todos os anos.
+    Além de ser consumido em barras, ele é utilizado na fabricação de bolos, doces, bebidas, sorvetes e inúmeras sobremesas.</p>
+    </section>
+</main>
+</body>
+<script>
+function trocarTema() {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("tema", "escuro");
+    } else {
+        localStorage.setItem("tema", "claro");
+    }
+}
+
+window.onload = function () {
+    if (localStorage.getItem("tema") === "escuro") {
+        document.body.classList.add("dark-mode");
+    }
+}
+</script>
+</html>

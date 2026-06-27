@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>História do Chocolate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="historia.html">História</a>
+        <a href="tipos.html">Tipos de Chocolates</a>
+        <a href="producao.html">Produção</a>
+        <a href="curiosidades.html">Curiosidades</a>
+        <a href="galeria.html">Galeria</a>
+    </nav>
+</header>
+
+<main class="conteudo">
+    <section class="secao">
+        <h2>Curiosidades.</h2>
+        <h2>Você Sabia?</h2>
+        <article>
+            <h3>Curiosidades sobre o chocolate.</h3>
+            <ul>
+            <li>O chocolate surgiu na América Central e começou a ser utilizado há mais de 3 mil anos pelos povos indígenas.
+            Os maias consumiam chocolate como bebida, misturando cacau, água e especiarias. A bebida era amarga e utilizada em cerimônias importantes.</li>
+            <li>Os astecas usavam sementes de cacau como moeda, podendo comprar diversos produtos com elas.
+            O cacau era considerado sagrado pelos maias e astecas, que acreditavam que ele era um presente dos deuses.</li>
+            <li>O chocolate chegou à Europa no século XVI, levado pelos espanhóis após o contato com os povos da América.
+            O chocolate que conhecemos hoje é diferente do original, pois os europeus adicionaram açúcar e leite à receita.</li>
+            <li>O nome científico do cacaueiro é Theobroma cacao, que significa "alimento dos deuses".
+            O chocolate ao leite foi criado em 1875, tornando-se uma das variedades mais populares do mundo.</li>
+            <li>O Brasil é um dos produtores de cacau, com destaque para os estados da Bahia e do Pará.
+            O chocolate é um dos alimentos mais consumidos do planeta, presente em doces, bebidas, bolos e sobremesas de diversos países.</li>
+            </ul>
+        </article>
+    </section>
+    <div class="imagem">
+    <img src="img4.png" alt="Povos Maias">
+    <img src="img3.png" alt="Povos Maias">
+    <img src="img6.png" alt="Povos Maias">
+    </div>
+</main>
+
+</body>
+<script>
+function trocarTema() {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        localStorage.setItem("tema", "escuro");
+    } else {
+        localStorage.setItem("tema", "claro");
+    }
+}
+
+window.onload = function () {
+    if (localStorage.getItem("tema") === "escuro") {
+        document.body.classList.add("dark-mode");
+    }
+}
+</script>
+</html>
