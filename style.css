@@ -16,10 +16,6 @@ body{
     transition:0.4s;
 }
 
-/* ===========================
-   CABEÇALHO
-=========================== */
-
 header{
     position:sticky;
     top:0;
@@ -43,10 +39,6 @@ header{
     letter-spacing:2px;
 }
 
-/* ===========================
-   MENU
-=========================== */
-
 nav{
     display:flex;
     gap:20px;
@@ -66,10 +58,6 @@ nav a:hover{
     background:#d4a017;
     color:#2c1b12;
 }
-
-/* ===========================
-   BOTÃO
-=========================== */
 
 button{
     background:#8b5a2b;
@@ -96,10 +84,6 @@ button:hover{
 
 }
 
-/* ===========================
-   CONTEÚDO
-=========================== */
-
 .conteudo{
 
     max-width:1200px;
@@ -109,10 +93,6 @@ button:hover{
     padding:40px 20px;
 
 }
-
-/* ===========================
-   BANNER
-=========================== */
 
 .banner{
 
@@ -157,10 +137,6 @@ button:hover{
     margin:auto;
 
 }
-
-/* ===========================
-   SEÇÕES
-=========================== */
 
 .secao{
 
@@ -244,17 +220,6 @@ transform:translateY(0);
 
 }
 
-}
-
-/* =====================================================
-   WIKI DO CHOCOLATE
-   CSS - PARTE 2
-===================================================== */
-
-/* ===========================
-   CARDS
-=========================== */
-
 .cards{
     display:flex;
     flex-wrap:wrap;
@@ -288,10 +253,6 @@ transform:translateY(0);
     color:#555;
 }
 
-/* ===========================
-   IMAGENS
-=========================== */
-
 img{
     max-width:100%;
     display:block;
@@ -308,10 +269,6 @@ img{
     border-radius:20px;
     box-shadow:0 10px 25px rgba(0,0,0,.25);
 }
-
-/* ===========================
-   GALERIA
-=========================== */
 
 .galeria{
     display:grid;
@@ -343,10 +300,6 @@ img{
     box-shadow:0 15px 25px rgba(0,0,0,.4);
 
 }
-
-/* ===========================
-   TABELA
-=========================== */
 
 table{
 
@@ -388,10 +341,6 @@ tr:hover{
 
 }
 
-/* ===========================
-   RODAPÉ
-=========================== */
-
 footer{
 
     background:#4E342E;
@@ -405,10 +354,6 @@ footer{
     margin-top:50px;
 
 }
-
-/* ===========================
-   TEMA ESCURO
-=========================== */
 
 .dark-mode{
 
@@ -491,10 +436,6 @@ footer{
 
 }
 
-/* ===========================
-   RESPONSIVIDADE
-=========================== */
-
 @media(max-width:768px){
 
 header{
@@ -543,15 +484,6 @@ nav{
 
 }
 
-}
-
-/* =====================================================
-   WIKI DO CHOCOLATE
-   CSS - PARTE 3
-=====================================================*/
-
-/* ---------- Títulos ---------- */
-
 h1,h2,h3,h4{
     font-weight:bold;
 }
@@ -568,8 +500,6 @@ p{
     font-size:18px;
 }
 
-/* ---------- Linha do Tempo ---------- */
-
 .timeline{
     margin-top:40px;
     padding-left:20px;
@@ -585,8 +515,6 @@ p{
     color:#6D4C41;
     margin-bottom:8px;
 }
-
-/* ---------- Etapas da Produção ---------- */
 
 .etapas{
     display:grid;
@@ -611,8 +539,6 @@ p{
 .etapa h3{
     color:#6D4C41;
 }
-
-/* ---------- Curiosidades ---------- */
 
 .curiosidade{
 
@@ -640,8 +566,6 @@ p{
 .curiosidade li{
     margin-bottom:10px;
 }
-
-/* ---------- Cards de Imagens ---------- */
 
 .card-imagem{
 
@@ -680,8 +604,6 @@ p{
     text-align:center;
 
 }
-
-/* ---------- Botão Voltar ao Topo ---------- */
 
 .topo{
 
@@ -725,8 +647,6 @@ p{
 
 }
 
-/* ---------- Scroll ---------- */
-
 ::-webkit-scrollbar{
 
     width:12px;
@@ -752,8 +672,6 @@ p{
     background:#3E2723;
 
 }
-
-/* ---------- Tema Escuro ---------- */
 
 .dark-mode .timeline{
 
@@ -796,8 +714,6 @@ p{
     color:black;
 
 }
-
-/* ---------- Fade ---------- */
 
 .fade{
 
